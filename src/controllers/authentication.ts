@@ -62,8 +62,6 @@ export const login = async (req: express.Request, res: express.Response) => {
         if (!email || !password) {
             return res.status(400).json({ error: 'Email and password are required' });
         }
-
-        // Check if the email exists in the sub-accounts
         const isSubAccount = await authenticateUser(email, '');
         if (!isSubAccount) {
             return res.status(401).json({ error: 'Email is not registered as a sub-account' });
@@ -78,8 +76,6 @@ export const login = async (req: express.Request, res: express.Response) => {
         if (user.authentication.password !== expectedHash) {
             return res.status(401).json({ error: 'Invalid email or password' });
         }
-
-        // Generate and store session token
         const sessionToken = generateRandomString(32);
         user.authentication.sessionToken = hashPassword(sessionToken, user._id.toString());
         await user.save();
