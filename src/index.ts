@@ -24,8 +24,11 @@ const limiter = rateLimit({
   limit: 100,  
   standardHeaders: 'draft-7',
   legacyHeaders: false,
+  validate: {
+		validationsConfig: false,
+		default: true,
+	},
 })
-
 const app = express();
 
 // Use security-related middleware
