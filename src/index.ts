@@ -25,7 +25,7 @@ const limiter = rateLimit({
   standardHeaders: 'draft-7',
   legacyHeaders: false,
   validate: {
-		validationsConfig: false,
+		xForwardedForHeader: false,
 		default: true,
 	},
 })
