@@ -49,7 +49,7 @@ export const sendMoneyViaEmail = async (req: express.Request, res: express.Respo
     } catch (error) {
         console.error('Error sending money via email:', error);
         return res.status(500).json({ error: 'Internal Server Error' });
-    }
+    } 
 };
 
 
@@ -60,7 +60,7 @@ const sendEmailNotification = async (email: string, amount: number) => {
                 port : 587,
                 secure: false, 
                 auth: {
-                    user: process.env.email, 
+                    user: '07afrik@gmail.com', 
                     pass: process.env.password
                 }
         });
