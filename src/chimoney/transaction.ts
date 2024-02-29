@@ -28,7 +28,7 @@ export const sendMoneyViaEmail = async (req: express.Request, res: express.Respo
                 valueInUSD,         
                 redeemData: {
                     walletID: "",
-                    interledgerWalletAddress: 'zedeki',
+                    interledgerWalletAddress: 'zedeki28',
                 }
             }]},
             {
