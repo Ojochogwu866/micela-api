@@ -64,4 +64,4 @@ app.get("/api/v1", (req, res) => {
 });
 app.use("/api/v1/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
-module.exports = app;
+export default app;
