@@ -63,3 +63,5 @@ app.get("/api/v1", (req, res) => {
   res.send('<h1>You read API</h1><a href="/api/v1/api-docs">Documentation</a>');
 });
 app.use("/api/v1/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
+
+module.exports = app;
