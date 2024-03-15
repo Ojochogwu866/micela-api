@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon",
     "test": "jest",
-    "build":"tsc"
+    "build":"tsc",
+    "test:prod":"jest --browsers=ChromeHeadless --watch=false --code-coverage"
   },
   "keywords": [],
   "author": "",
