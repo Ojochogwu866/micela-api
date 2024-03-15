@@ -12,18 +12,19 @@ const CHIMONEY_API_BASE_URL = 'https://api-v2-sandbox.chimoney.io/v0.2/';
  */
 export const sendMoneyViaEmail = async (req: express.Request, res: express.Response) => {
     try {
-        const { email, valueInUSD } = req.body;
-        if (!email || !valueInUSD) {
+        const { email, valueInUSD, subAccount } = req.body;
+        if (!email || !valueInUSD || !subAccount) {
             return res.status(400).json({ error: 'All values are required' });
         }
         const apiKey = process.env.CHIMONEY_API_KEY;
         if (!apiKey) {
             throw new Error('Chi-Money API key not provided');
-        }
-        
+        }      
         const response = await axios.post(
             `${CHIMONEY_API_BASE_URL}/payouts/chimoney`,
-            { chimoneys: [{
+            { 
+                subAccount,
+                chimoneys: [{
                 email, 
                 valueInUSD,         
                 redeemData: {

@@ -20,7 +20,6 @@ export const register = async (req: express.Request, res: express.Response) => {
         if (existingUser) {
             return res.status(409).json({ error: 'Email already in use' });
         }
-
         const salt = generateRandomString(16);
         const hashedPassword = hashPassword(password, salt);
         const user = await createUser({

@@ -11,8 +11,6 @@ export const generateRandomString = (length: number): string => {
     return crypto.randomBytes(length).toString('base64');
 };
 
-
-
 /**
  * Hashes the password using HMAC with SHA-256 algorithm and a secret.
  * @param {string} password The password to hash.
