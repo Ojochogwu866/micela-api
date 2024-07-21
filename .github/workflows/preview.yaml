@@ -7,7 +7,6 @@ on:
     branches-ignore:
       - Master
 jobs:
-
   Test:
     runs-on: ubuntu-latest
     steps:

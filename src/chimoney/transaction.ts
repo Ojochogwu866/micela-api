@@ -71,7 +71,7 @@ const sendEmailNotification = async (email: string, amount: number) => {
             to: email,
             subject: 'Payment Received',
             html: `<p>You have received a payment of ${amount} USD.</p>
-                   <p>To cash out the money, please visit the following URL: <a href="https://chimoney-fullstack.vercel.app/">Cash Out</a></p>`
+                <p>To cash out the money, please visit the following URL: <a href="https://chimoney-fullstack.vercel.app/">Cash Out</a></p>`
         };
 
         await transporter.sendMail(mailOptions);
