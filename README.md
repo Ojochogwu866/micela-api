@@ -6,11 +6,6 @@ This is a simple fullstack application built using express authentication and ch
 ![Dashboard Preview](https://imgur.com/a/G71BeUO)
 
 ---
-## Challenges
-
-Had a bit of challenge working of this, some of which I feel I did not resolve. But in all, was a good run. Was so much of brainstorming involved with integrating with the API, and a couple of other stuufs I feel wasn't clear enough. I hope every time i gave this would be worth it :)
-
----
 
 ## Features
 - Tranfet Money to users
