@@ -1,4 +1,4 @@
-CHIMONEY FULLSTACK - API
+MICELA API
 ============
 
 This is a simple fullstack application built using express authentication and chimoney api, to send money to several users, recieve money from users via email, and also view transaction history. This repo is the backend code and the frontend is found [here](https://github.com/Ojochogwu866/chi-money-fullstack).
