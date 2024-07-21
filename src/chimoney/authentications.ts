@@ -9,6 +9,7 @@ interface SubAccountData {
     email: string;
     phoneNumber: string;
 }
+
 /**
  * CREATE SUB ACCOUNT FOR A USER IN CHI-MONEY API
  * @param {string} userId
