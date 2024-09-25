@@ -1,7 +1,7 @@
 # Micela Pay - API
 
 ## Overview
-Micela Pay API is the backbone of our financial transaction platform, built with Node.js and TypeScript. It leverages the Chimoney API to facilitate secure money transfers, receipts, and transaction management.
+Micela Pay API is the backbone of the financial transaction platform, built with Node.js and TypeScript. It leverages the Chimoney API to facilitate secure money transfers, receipts, and transaction management.
 
 ![API Structure](https://imgur.com/a/G71BeUO)
 
