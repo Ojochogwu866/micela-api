@@ -48,12 +48,6 @@ Micela Pay API is the backbone of the financial transaction platform, built with
    ```
 2. The API will be available at `http://localhost:8080`
 
-## API Documentation
-Detailed API documentation is available at `/api-docs` when the server is running.
-
-## Database Schema
-Our MongoDB schema includes collections for Users, Transactions, and Accounts. Refer to `src/models` for detailed schema definitions.
-
 ## Testing
 Run the test suite with:
 ```
