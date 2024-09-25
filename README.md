@@ -1,40 +1,76 @@
-CHIMONEY FULLSTACK - API
-============
+# Micela Pay - API
 
-This is a simple fullstack application built using express authentication and chimoney api, to send money to several users, recieve money from users via email, and also view transaction history. This repo is the backend code and the frontend is found [here](https://github.com/Ojochogwu866/chi-money-fullstack).
+## Overview
+Micela Pay API is the backbone of our financial transaction platform, built with Node.js and TypeScript. It leverages the Chimoney API to facilitate secure money transfers, receipts, and transaction management.
 
-![Dashboard Preview](https://imgur.com/a/G71BeUO)
+![API Structure](https://imgur.com/a/G71BeUO)
 
----
-## Challenges
+## Key Features
+- Robust Express-based authentication system
+- Seamless integration with Chimoney API for financial operations
+- User management and search functionality
+- Secure money transfer between users
+- Email-based payment receipt system
+- Real-time balance enquiry and transaction history
 
-Had a bit of challenge working of this, some of which I feel I did not resolve. But in all, was a good run. Was so much of brainstorming involved with integrating with the API, and a couple of other stuufs I feel wasn't clear enough. I hope every time i gave this would be worth it :)
+## Technology Stack
+- Node.js
+- TypeScript
+- Express.js
+- MongoDB for data persistence
+- JSON Web Tokens (JWT) for authentication
+- Chimoney API for financial transactions
 
----
+## Getting Started
 
-## Features
-- Tranfet Money to users
-- Recieve money via email
-- Search for users, and send to only available users
-- View Balance
+### Prerequisites
+- Node.js (v14 or later)
+- MongoDB
+- Chimoney API credentials
 
+### Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/Ojochogwu866/Chi_api.git
+   cd Chi_api
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Set up environment variables:
+   Copy `.env.example` to `.env` and fill in the required values, including your Chimoney API credentials.
 
-## Setup
-Clone this repo to your desktop and run `npm install` to install all the dependencies.
+### Running the API
+1. Start the server:
+   ```
+   npm start
+   ```
+2. The API will be available at `http://localhost:8080`
 
-You might want to make necessary adjustment and configurations based on your expectations
+## API Documentation
+Detailed API documentation is available at `/api-docs` when the server is running.
 
----
+## Database Schema
+Our MongoDB schema includes collections for Users, Transactions, and Accounts. Refer to `src/models` for detailed schema definitions.
 
-## Usage
-After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
+## Testing
+Run the test suite with:
+```
+npm test
+```
 
-Once the dependencies are installed, you can run  `npm start` to start the application. You will then be able to access it at localhost:8080
+## Deployment
+Deployment instructions for various platforms can be found in [DEPLOYMENT.md](DEPLOYMENT.md).
 
+## Frontend Integration
+This API is designed to work with our [Micela Pay Frontend](https://github.com/Ojochogwu866/chi-money-fullstack). Refer to the frontend repository for UI implementation details.
 
----
+## Contributing
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## License
->You can check out the full license [here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the terms of the **MIT** license.
+## Support
+For any technical issues or questions, please open an issue in this repository or contact our support team.
