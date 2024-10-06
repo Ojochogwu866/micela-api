@@ -41,7 +41,7 @@ export const register = async (req: express.Request, res: express.Response) => {
         };
         await createSubAccount(user._id, subAccountData);
 
-        return res.status(201).json(user).end();
+        return res.status(201).json('User successfully registered').end();
     } catch (error) {
         console.error('Error registering user:', error);
         return res.status(500).json({ error: 'Internal Server Error' });
