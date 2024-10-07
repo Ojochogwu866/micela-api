@@ -5,7 +5,7 @@ import transactions from './transactions';
 const router = express.Router();
 
 export default (): express.Router => {
-    authentication(router);
-    transactions(router)
-    return router;
+	authentication(router);
+	transactions(router);
+	return router;
 };

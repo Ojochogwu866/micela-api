@@ -8,7 +8,7 @@ const SECRET = process.env.SECRET || '';
  */
 
 export const generateRandomString = (length: number): string => {
-    return crypto.randomBytes(length).toString('base64');
+	return crypto.randomBytes(length).toString('base64');
 };
 
 /**
@@ -20,9 +20,12 @@ export const generateRandomString = (length: number): string => {
  */
 
 export const hashPassword = (password: string, salt: string): string => {
-    try {
-        return crypto.createHmac('sha256', `${salt}/${password}`).update(SECRET).digest('hex');
-    } catch (error) {
-        throw new Error("Failed to hash password");
-    }
+	try {
+		return crypto
+			.createHmac('sha256', `${salt}/${password}`)
+			.update(SECRET)
+			.digest('hex');
+	} catch (error) {
+		throw new Error('Failed to hash password');
+	}
 };
